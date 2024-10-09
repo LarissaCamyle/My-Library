@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sass/style.css">
+    <link rel="stylesheet" href="/sass/reset.css">
+    <link rel="icon" href="/img/icon.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+		<h1>MY LIBRARY</h1>
+        <button>Trocar Tema</button>
+    </header>
+
+    <section class="banner">
+        <h1>Do 'quero ler' ao 'já li'<br><span>organize suas<br>jornadas literárias de<br>forma única!</span></h1>
+        <div>
+            <div class="circulo"></div>
+            <img src="/img/livro-banner.png">
+        </div>
+    </section>
+    
+    <main>
+        <button class="adicionar-livro">Adicionar Livro</button>
+        <form class="">
+            <div>
+                <h1>Nome do Livro</h1>
+                <input type="text" id="nome">
+                <h1>Gênero</h1>
+                <select>
+                    <option value="ficcao">Ficção</option>
+                    <option value="nao-ficcao">Não ficcao</option>
+                    <option value="fantasia">Fantasia</option>
+                    <option value="romance">Romance</option>
+                    <option value="misterio">Mistério</option>
+                    <option value="terror">Terror</option>
+                    <option value="aventura">Aventura</option>
+                </select>
+                <h1>Data</h1>
+                <input type="date" id="data">
+                <h1>Status</h1>
+                <select>
+                    <option value="lendo">Lendo</option>
+                    <option value="lidos">Lidos</option>
+                    <option value="quero-ler">Quero ler</option>
+                </select>
+                <h1 class="centro">Avaliação</h1>
+                <div class="btns-avaliacao">
+                    <button id="avaliacao-btn-1"><img src="/img/estrela-vazia.png"></button>
+                    <button id="avaliacao-btn-2"><img src="/img/estrela-vazia.png"></button>
+                    <button id="avaliacao-btn-3"><img src="/img/estrela-vazia.png"></button>
+                </div>
+                <button class="form-adicionar-livro">Adicionar Livro</button>
+            </div>
+        </form>
+
+        <hr>
+
+        <nav>
+            <h1>LIVROS</h1>
+            <div>
+                <input type="text" id="pesquisa" placeholder="Encontrar Livro">
+                <img src="./img/lupa.png">
+            </div>
+            
+            <div class="status">
+                <button id="btn-status-lendo">Lendo</button>
+                <button id="btn-status-lidos">Lidos</button>
+                <button id="btn-status-quero-ler">Quero Ler</button>
+            </div>
+        </nav>
+
+        <ul id="lista-livros">
+            <li>
+                <div>Lendo</div>
+                <h1>Nome do Livro</h1>
+                <img src="/img/livro-terror.png">
+                <div class="avaliacao-livro">
+                    <button id="btn-estrela-livro-1"><img src="/img/estrela-vazia.png"></button>
+                    <button id="btn-estrela-livro-2"><img src="/img/estrela-vazia.png"></button>
+                    <button id="btn-estrela-livro-3"><img src="/img/estrela-vazia.png"></button>
+                </div>
+            </li>
+
+        </ul>
+
+    </main>
+    
+    <footer></footer>
+    
+     <script src="script.js" defer></script>
+</body>
+</html>

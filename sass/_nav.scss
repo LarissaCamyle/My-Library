@@ -1,0 +1,57 @@
+hr{
+    border: 2px solid $destaque2;
+    width: 15rem;
+    margin: 5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem auto;
+
+    h1{
+        color: white;
+        font-size: 2rem;
+        font-family: $fonte-podkova;
+        letter-spacing: 1px;
+        margin: 2rem;
+    }
+    input{
+        height: 2.8rem;
+        font-size: 1.2rem;
+        padding: 0rem 2rem;
+        color: white;
+        border: 3px solid $destaque1;
+        border-radius: 20px;
+        font-family: $fonte-poppins;
+        font-weight: 400;
+        background-color: transparent;
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    img{
+        height: 1.7rem;
+    }
+    .status{
+        margin: 3rem 0rem;
+
+        button{
+            background: $destaque2;
+            padding: 0.5rem 1rem 0.8rem 1rem;
+            border-radius: 1.5rem;
+            border: none;
+            font-family: $fonte-mirza;
+            font-size: 1.5rem;
+            font-weight: 800;
+            display: flex;
+            color: white;
+        }
+    }
+
+}

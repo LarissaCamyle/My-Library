@@ -1,0 +1,23 @@
+@import 'variaveis';
+@import 'header';
+@import 'banner';
+@import 'form';
+@import 'nav';
+@import 'livros';
+
+@function calculate-rem($px){
+    @return $px / 16 * 1rem;
+}
+
+body{
+    background: $bg-color;
+    font-family: $fonte-poppins;
+}
+
+.hidden{
+    display: none;
+}
+
+button:hover{
+    transform: scale(1.08);
+}

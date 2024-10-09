@@ -1,0 +1,87 @@
+.adicionar-livro{
+    background: transparent;
+    border: 4px solid $destaque1;
+    padding: 0.5rem 2.5rem;
+    color: white;
+    font-family: $fonte-podkova;
+    font-size: 1.4rem;
+    border-radius: 1.4rem;
+    margin: 5rem auto;
+    display: flex;
+}
+
+form{
+    display: flex;
+    margin-left: 1rem auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-family: $fonte-podkova;
+        font-size: 1.3rem;
+        text-align: start;
+        color: white;
+    }
+    div{
+        border: 5px solid $destaque2;
+        border-radius: 10px;
+        padding: 1rem;
+        background: $bg-form;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    input, select{
+        height: 2.8rem;
+        font-size: 1rem;
+        padding: 0rem 0.5rem;
+        background: $bg-input;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-family: $fonte-poppins;
+        font-weight: 300;
+    }
+    input{
+        width: 20rem;
+    }
+    select{
+        width: 21.05rem;
+        appearance: none;
+    }
+    .centro{
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    .btns-avaliacao{
+        border: none;
+        background: transparent;
+        flex-direction: row;
+        margin: 0rem auto;
+        height: 1.5rem;
+        align-items: center;
+
+        button{
+            background: transparent;
+            border: none;
+
+            img{
+                height: 2rem;
+            }
+        }
+    }
+    .form-adicionar-livro{
+        background: $destaque1;
+        border: 4px solid $destaque1;
+        padding: 0.5rem 2.5rem;
+        color: $bg-color;
+        font-family: $fonte-podkova;
+        font-size: 1.5rem;
+        border-radius: 1.4rem;
+        margin: 0.5rem auto;
+        display: flex;
+        font-weight: bolder;
+    }
+    
+}
