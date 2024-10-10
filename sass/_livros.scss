@@ -1,0 +1,61 @@
+.lista-livros{
+    display: flex;
+    margin: 0rem auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.livro{
+    width: 20rem;
+    color: white;
+    margin: 0rem auto;
+
+    .borda{
+        border: 3px solid white;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        .status-info{
+            font-family: $fonte-poppins;
+            text-transform: uppercase;
+            margin-left: auto;
+            padding: 1rem;
+            background: $destaque1;
+            color: black;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        h1{
+            font-family: $fonte-mirza;
+            font-size: 1.5rem;
+        }
+
+        img{
+            height: 10rem;
+            width: 10rem;
+        }
+        button{
+            background: none;
+            border: none;
+        }
+        .avaliacao-livro{
+            img{
+                height: 25px;
+                width: 25px;
+            }
+        }
+        .info{
+            font-family: $fonte-poppins;
+            font-weight: 200;
+            display: flex;
+            gap: 3rem;
+        }
+
+    }
+}

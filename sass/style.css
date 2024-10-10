@@ -203,6 +203,61 @@ nav .status button {
   color: white;
 }
 
+.lista-livros {
+  display: flex;
+  margin: 0rem auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.livro {
+  width: 20rem;
+  color: white;
+  margin: 0rem auto;
+}
+.livro .borda {
+  border: 3px solid white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.livro .borda .status-info {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin-left: auto;
+  padding: 1rem;
+  background: #AAD89D;
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.livro .borda h1 {
+  font-family: "Mirza", serif;
+  font-size: 1.5rem;
+}
+.livro .borda img {
+  height: 10rem;
+  width: 10rem;
+}
+.livro .borda button {
+  background: none;
+  border: none;
+}
+.livro .borda .avaliacao-livro img {
+  height: 25px;
+  width: 25px;
+}
+.livro .borda .info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  display: flex;
+  gap: 3rem;
+}
+
 body {
   background: #252525;
   font-family: "Poppins", sans-serif;
