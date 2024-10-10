@@ -10,8 +10,8 @@
 }
 
 body{
-    background: $bg-color;
-    font-family: $fonte-poppins;
+    background: var(--bg-color);
+    font-family: var(--fonte-poppins);
 }
 
 .hidden{
@@ -20,4 +20,8 @@ body{
 
 button:hover{
     transform: scale(1.08);
+}
+
+button{
+    cursor: pointer;
 }

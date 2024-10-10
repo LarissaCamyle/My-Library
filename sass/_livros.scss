@@ -21,18 +21,18 @@
         gap: 1rem;
 
         .status-info{
-            font-family: --fonte-poppins;
+            font-family: var(--fonte-poppins);
             text-transform: uppercase;
             margin-left: auto;
             padding: 1rem;
-            background: --destaque1;
+            background: var(--destaque1);
             color: black;
             font-weight: 600;
             font-size: 1.2rem;
             border-radius: 0px 15px;
         }
         h1{
-            font-family: --fonte-mirza;
+            font-family: var(--fonte-mirza);
             font-size: 1.8rem;
             margin-top: -0.5rem;
         }
@@ -58,7 +58,7 @@
 
             h1{
                 font-size: 1.3rem;
-                font-family: --fonte-poppins;
+                font-family: var(--fonte-poppins);
                 font-weight: 200;
                 font-style: italic;
             }

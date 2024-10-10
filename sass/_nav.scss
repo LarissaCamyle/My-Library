@@ -1,7 +1,8 @@
 hr{
-    border: 2px solid $destaque2;
+    border: 2px solid var(--destaque2);
     width: 15rem;
-    margin: 5rem;
+    margin: 5rem auto;
+
 }
 
 nav{
@@ -18,7 +19,7 @@ nav{
     h1{
         color: white;
         font-size: 2rem;
-        font-family: $fonte-podkova;
+        font-family: var(--fonte-podkova);
         letter-spacing: 1px;
         margin: 2rem;
     }
@@ -27,9 +28,9 @@ nav{
         font-size: 1.2rem;
         padding: 0rem 2rem;
         color: white;
-        border: 3px solid $destaque1;
+        border: 3px solid var(--destaque1);
         border-radius: 20px;
-        font-family: $fonte-poppins;
+        font-family: var(--fonte-poppins);
         font-weight: 400;
         background-color: transparent;
     }
@@ -46,11 +47,11 @@ nav{
         margin: 3rem 0rem;
 
         button{
-            background: $destaque2;
+            background: var(--destaque2);
             padding: 0.5rem 1rem 0.8rem 1rem;
             border-radius: 1.5rem;
             border: none;
-            font-family: $fonte-mirza;
+            font-family: var(--fonte-mirza);
             font-size: 1.5rem;
             font-weight: 800;
             display: flex;

@@ -7,8 +7,8 @@
 
     //cores base
     --bg-color : #252525;
-    --destaque1: --tema1-cor1;
-    --destaque2: --tema1-cor2;
+    --destaque1: var(--tema1-cor1);
+    --destaque2: var(--tema1-cor2);
     --bg-form: rgba(255, 255, 255, 0.055);
     --bg-input: #1A1717;
 
