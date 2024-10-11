@@ -4,6 +4,7 @@
 @import 'form';
 @import 'nav';
 @import 'livros';
+@import 'footer';
 
 @function calculate-rem($px){
     @return $px / 16 * 1rem;
@@ -12,6 +13,7 @@
 body{
     background: var(--bg-color);
     font-family: var(--fonte-poppins);
+    min-height: 100vh;
 }
 
 .hidden{

@@ -36,13 +36,29 @@ const eventosCss={
     },
 
     xFormulario (event) {
+        //fecha o form e mostra o btn adicionar livro
         event.preventDefault();
         const form = document.querySelector("form");
         form.classList.toggle("hidden");
+        const btnAdicionarAbrirForm = document.querySelector(".adicionar-livro")
+        btnAdicionarAbrirForm.classList.toggle("hidden");
     },
 
-    preencherEstrelasForm(event, btnClicado){
-        alert("b")
+    preencherEstrelasForm(evento, btn){
+        evento.preventDefault();
+        const idBtn = btn.id;
+        const posicaoBtn = idBtn.split('-')[2];
+        const ListaBtnEstrela = document.querySelectorAll('.btns-avaliacao button');
+        
+        //primeiro limpa todas as estrelas
+        ListaBtnEstrela.forEach(btn => {
+            btn.children[0].setAttribute("src", "/img/estrela-vazia.png")
+        })
+        //segundo seleciona as estrelas desejadas
+        for(let i = 0; i < posicaoBtn; i++){
+            const img = ListaBtnEstrela[i].children[0];
+            img.setAttribute("src", "/img/estrela-preenchida.png")
+        }
     }
 
 

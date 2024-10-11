@@ -305,9 +305,17 @@ nav .status button {
   width: 23px;
 }
 
+footer {
+  background: var(--destaque1);
+  height: 10rem;
+  width: 100%;
+  margin: 10rem 0rem 0rem 0rem !important;
+}
+
 body {
   background: var(--bg-color);
   font-family: var(--fonte-poppins);
+  min-height: 100vh;
 }
 
 .hidden {
