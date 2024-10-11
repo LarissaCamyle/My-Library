@@ -1,10 +1,10 @@
-export const livros = [];
+export const ListaLivrosArray = [];
 
 //cria o obj livro e adiciona ao array
 export function criarObjLivro (nome, genero, data, status, avaliacao){
     const livro = new objLivro (nome, genero, data, status, avaliacao);
-    livros.push(livro);
-    console.log(livros)
+    ListaLivrosArray.push(livro);
+    console.log(ListaLivrosArray)
 }
 
 export class objLivro {

@@ -1,4 +1,5 @@
 import { criarObjLivro } from "./criarObjLivro.js";
+import { criarVisualmente } from "./criarVisualmenteObj.js";
 
 export function manipularForm (evento) {
     evento.preventDefault();
@@ -23,8 +24,9 @@ export function manipularForm (evento) {
     }
 
     alert('adicionado')
+    //cria o obj e adiciona ao array
     criarObjLivro(nomeLivro, genero, data, status, favorito);
 
-
+    criarVisualmente();
 
 }
