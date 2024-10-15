@@ -1,6 +1,9 @@
 import { manipularForm } from './manipularForm.js';
 import eventosCss from '/js/eventosCSS.js'
 
+//COLOCAR ACENTO NO GENERO QUANDO ESCRITO NO LIVRO JA CRIADO
+//ARRUMAR O CSS PARA COMPUTADOR TBM CM O MEDIA QUERY
+
 //EVENTOS CSS
 const trocarTema = document.querySelector("header button");
 trocarTema.addEventListener("click", (evento) => eventosCss.trocaTemaFuncao(evento));

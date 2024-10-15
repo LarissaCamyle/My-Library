@@ -231,12 +231,14 @@ nav .status button {
   color: white;
 }
 
-.lista-livros {
+#lista-livros {
   display: flex;
   margin: 0rem auto;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .livro {
