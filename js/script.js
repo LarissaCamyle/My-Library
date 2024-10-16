@@ -1,3 +1,4 @@
+import { criarVisualmente } from './criarVisualmenteObj.js';
 import { manipularForm } from './manipularForm.js';
 import eventosCss from '/js/eventosCSS.js'
 
@@ -23,3 +24,7 @@ ListaBtnEstrela.forEach(btn => {
 //FORMULARIO
 const btnAdicionarForm = document.querySelector(".form-adicionar-livro");
 btnAdicionarForm.addEventListener("click", (evento) => manipularForm(evento));
+
+
+//QUANDO CARREGA PAGINA
+criarVisualmente();

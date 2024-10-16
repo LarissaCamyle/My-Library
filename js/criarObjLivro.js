@@ -1,9 +1,17 @@
-export const ListaLivrosArray = [];
+//recebe as info do navegador, se não tiver informações armazenadas
+//cria um array vazio
+export const ListaLivrosArray = JSON.parse(localStorage.getItem('livros')) || [];
 
 //cria o obj livro e adiciona ao array
 export function criarObjLivro (nome, genero, data, status, avaliacao){
     const livro = new objLivro (nome, genero, data, status, avaliacao);
+
+    //guarda informacoes locais
     ListaLivrosArray.push(livro);
+
+    //guardar informações no navegador
+    localStorage.setItem('livros', JSON.stringify(ListaLivrosArray));
+
     console.log(ListaLivrosArray)
 }
 

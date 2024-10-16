@@ -79,10 +79,15 @@ export function criarVisualmente () {
         //FUNCOES -----------------------------------------------------------
         btnEditar.addEventListener("click", () => {
             preencherFormParaEdicao(livro.id)
+            //arrasta a tela até o form
+            const formulario = document.querySelector("form")
+            formulario.scrollIntoView({ behavior: "smooth" }); 
         })
 
         btnExcluir.addEventListener("click", () => {
-            excluirObjLivro(livro.id);
+            const pergunta = confirm(`Deseja excluir o livro "${livro.nome}"?`)
+            pergunta === true ? excluirObjLivro(livro.id) : null
+            
         })
 
     });
