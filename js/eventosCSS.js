@@ -27,7 +27,7 @@ const eventosCss={
     },
 
     abrirFormulario(event){
-        event.preventDefault();
+        event === "" ? null : event.preventDefault()
         const btnAdicionarAbrirForm = document.querySelector(".adicionar-livro")
         btnAdicionarAbrirForm.classList.toggle("hidden");
 

@@ -1,6 +1,8 @@
 import { ListaLivrosArray } from "./criarObjLivro.js";
+import eventosCss from "./eventosCSS.js";
 import { excluirObjLivro } from "./excluirObjLivro.js";
 import { formatarData } from "./formatarData.js";
+import { formatarGenero } from "./formatarGenero.js";
 import { preencherFormParaEdicao } from "./preencherFormParaEdicao.js";
 
 const ulLivros = document.querySelector("#lista-livros");
@@ -13,8 +15,9 @@ export function criarVisualmente () {
         //CRIA OS ELEMENTOS HTML-------------------------------------------------
         const li = criarElemento("li", "livro", livro.id, "", "");
         const divBorda = criarElemento("div", "borda", "", "", "");
-
-        const divStatus = criarElemento("div", "status-info", "", livro.status, "");
+        //formatando o status de "quero-ler" para "quero ler"
+        const status = livro.status.replace("-", " ")
+        const divStatus = criarElemento("div", "status-info", "", status, "");
         const h1Nome = criarElemento("h1", "", "", livro.nome, "");
 
         const imgLivro = criarElemento("img", "", "", "", `/img/livro-${livro.genero}.png`);
@@ -27,7 +30,8 @@ export function criarVisualmente () {
         const divInfo = criarElemento("div", "info", "", "", "");
         const data = formatarData(livro.data)
         const h1Data = criarElemento("h1", "", "", data, "");
-        const h1Genero = criarElemento("h1", "", "", livro.genero, "");
+        const genero = formatarGenero(livro.genero);
+        const h1Genero = criarElemento("h1", "", "", genero, "");
 
         const divBtns = criarElemento("div", "btn", "", "", "");
         const btnExcluir = criarElemento("button", "", "btn-livro-excluir", "", "");
@@ -81,6 +85,7 @@ export function criarVisualmente () {
             preencherFormParaEdicao(livro.id)
             //arrasta a tela até o form
             const formulario = document.querySelector("form")
+            eventosCss.abrirFormulario("");
             formulario.scrollIntoView({ behavior: "smooth" }); 
         })
 
