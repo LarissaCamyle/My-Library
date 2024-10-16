@@ -77,6 +77,66 @@ header button {
   z-index: 2;
 }
 
+@media screen and (max-width: 370px) {
+  .banner {
+    font-size: 2rem;
+  }
+  .banner .circulo {
+    height: 17rem;
+    width: 17rem;
+  }
+  .banner img {
+    width: 18rem;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .banner {
+    margin: 7rem auto 9rem auto;
+    font-size: 2.4rem;
+    flex-direction: row;
+  }
+  .banner h1 {
+    color: white;
+    margin: 7rem auto 2rem auto;
+    text-align: start;
+  }
+  .banner div {
+    margin: 0rem auto;
+  }
+  .banner .circulo {
+    height: 22rem;
+    width: 22rem;
+    transform: translate(-3%, -70%);
+    margin-top: 10rem;
+  }
+  .banner img {
+    width: 23rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .banner {
+    margin: 4rem auto 9rem auto;
+    font-size: 2.6rem;
+    flex-direction: row;
+  }
+  .banner h1 {
+    color: white;
+    margin: 9rem auto 2rem auto;
+    text-align: start;
+  }
+  .banner div {
+    margin: 0rem auto;
+  }
+  .banner .circulo {
+    height: 26rem;
+    width: 26rem;
+    transform: translate(-6%, -73%);
+    margin-top: 10rem;
+  }
+  .banner img {
+    width: 27rem;
+  }
+}
 .adicionar-livro {
   background: transparent;
   border: 4px solid var(--destaque1);
@@ -172,6 +232,55 @@ form .form-adicionar-livro {
   font-weight: bolder;
 }
 
+@media screen and (max-width: 400px) {
+  form h1 {
+    font-size: 1.2rem;
+  }
+  form div {
+    padding: 2rem;
+    gap: 1rem;
+  }
+  form input {
+    width: 16rem;
+  }
+  form select {
+    width: 17.05rem;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  form .btns-avaliacao button img {
+    height: 1.8rem;
+  }
+  form .form-adicionar-livro {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  form h1 {
+    font-size: 1.5rem;
+  }
+  form input, form select {
+    font-size: 1.1rem;
+    padding: 0rem 0.5rem;
+    margin: 0.3rem 0rem;
+  }
+  form input {
+    width: 26rem;
+  }
+  form select {
+    width: 27.05rem;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  form .btns-avaliacao button img {
+    height: 1.8rem;
+  }
+  form .form-adicionar-livro {
+    font-size: 1.5rem;
+  }
+}
 hr {
   border: 2px solid var(--destaque2);
   width: 15rem;
