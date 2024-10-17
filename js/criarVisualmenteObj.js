@@ -82,11 +82,15 @@ export function criarVisualmente () {
 
         //FUNCOES -----------------------------------------------------------
         btnEditar.addEventListener("click", () => {
-            preencherFormParaEdicao(livro.id)
+            
             //arrasta a tela até o form
-            const formulario = document.querySelector("form")
+            const formulario = document.querySelector("main")
+
             eventosCss.abrirFormulario("");
+
             formulario.scrollIntoView({ behavior: "smooth" }); 
+
+            preencherFormParaEdicao(livro.id)
         })
 
         btnExcluir.addEventListener("click", () => {

@@ -237,7 +237,7 @@ form .form-adicionar-livro {
     font-size: 1.2rem;
   }
   form div {
-    padding: 2rem;
+    padding: 0.8rem;
     gap: 1rem;
   }
   form input {
@@ -303,7 +303,7 @@ nav h1 {
   font-size: 2rem;
   font-family: var(--fonte-podkova);
   letter-spacing: 1px;
-  margin: 2rem;
+  margin: 2rem 0rem 3rem 0rem;
 }
 nav input {
   height: 2.8rem;
@@ -326,7 +326,11 @@ nav img {
   height: 1.7rem;
 }
 nav .status {
-  margin: 3rem 0rem;
+  margin: 3rem 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 nav .status button {
   background: var(--destaque2);
@@ -340,6 +344,40 @@ nav .status button {
   color: white;
 }
 
+@media screen and (max-width: 380px) {
+  nav h1 {
+    font-size: 1.7rem;
+  }
+  nav input {
+    font-size: 1.1rem;
+    padding: 0rem 1rem;
+  }
+  nav div {
+    gap: 0.2rem;
+  }
+  nav img {
+    height: 1.7rem;
+  }
+  nav .status button {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  nav h1 {
+    font-size: 2.4rem;
+    margin: 2rem 0rem 5rem 0rem;
+  }
+  nav input {
+    font-size: 1.2rem;
+    padding: 0.2rem 2rem;
+  }
+  nav div {
+    gap: 1rem;
+  }
+  nav .status button {
+    font-size: 1.6rem;
+  }
+}
 #lista-livros {
   display: flex;
   margin: 0rem auto;
@@ -348,12 +386,13 @@ nav .status button {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  margin: 1rem;
 }
 
 .livro {
   width: 20rem;
   color: white;
-  margin: 0rem auto;
+  margin: 0.7rem auto;
 }
 .livro .borda {
   border: 3px solid white;
@@ -416,6 +455,11 @@ nav .status button {
   width: 23px;
 }
 
+@media screen and (min-width: 1000px) {
+  #lista-livros {
+    margin: 1rem 3rem;
+  }
+}
 footer {
   background: var(--destaque1);
   height: 10rem;

@@ -29,10 +29,10 @@ const eventosCss={
     abrirFormulario(event){
         event === "" ? null : event.preventDefault()
         const btnAdicionarAbrirForm = document.querySelector(".adicionar-livro")
-        btnAdicionarAbrirForm.classList.toggle("hidden");
+        btnAdicionarAbrirForm.classList.add("hidden");
 
         const form = document.querySelector("form");
-        form.classList.toggle("hidden")
+        form.classList.remove("hidden")
     },
 
     xFormulario (event) {

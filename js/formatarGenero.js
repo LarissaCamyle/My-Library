@@ -4,7 +4,7 @@ export function formatarGenero (genero) {
             return "Ficção"
             
         case 'nao-ficcao':
-            return "Não ficcao"
+            return "Não ficção"
 
         case 'fantasia':
             return "Fantasia"

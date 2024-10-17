@@ -6,12 +6,13 @@
     align-items: center; 
     gap: 1rem;
     flex-wrap: wrap;
+    margin: 1rem;
 }
-
+ 
 .livro{
     width: 20rem;
     color: white;
-    margin: 0rem auto;
+    margin: 0.7rem auto;
 
     .borda{
         border: 3px solid white;
@@ -76,5 +77,11 @@
             }
         }
 
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #lista-livros{
+        margin: 1rem 3rem;
     }
 }

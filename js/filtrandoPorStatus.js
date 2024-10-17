@@ -12,14 +12,14 @@ export function filtrarStatus(evento, btn){
     //mostra todos os livros
     if(status === "todos"){
         ListaLivrosArray.forEach(livro => {
-            const divLivro = document.getElementById(livro.id)
+            let divLivro = document.getElementById(livro.id)
             divLivro.style.display = "block"
         });     
     }
     //filtra
     else{
         ListaLivrosArray.forEach(livro => {
-            const divLivro = document.getElementById(livro.id)
+            let divLivro = document.getElementById(livro.id)
             if(livro.status === status){
                 divLivro.style.display = "block"
             }
